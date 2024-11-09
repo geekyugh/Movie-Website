@@ -164,6 +164,16 @@ body {
   overflow: hidden;
 }
 
+#right {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .movie-list {
   display: flex;
   align-items: center;
@@ -184,7 +194,7 @@ body {
 }
 
 .movie-list-item:hover .movie-list-item-title,
-.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-text,
 .movie-list-item:hover .movie-list-item-button {
   opacity: 1;
 }
@@ -203,18 +213,18 @@ body {
   font-size: 32px;
   font-weight: bold;
   position: absolute;
-  top: 10%;
+  top: -5%;
   left: 10px;
   opacity: 0;
   transition: 1s ease-in-out;
 }
 
-.movie-list-item-desc {
-  background-color: #333;
+.movie-list-item-text {
+  background-color: transparent;
   padding: 10px;
   font-size: 14px;
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50px;
   width: 230px;
   opacity: 0;
@@ -230,7 +240,7 @@ body {
   border: none;
   cursor: pointer;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50px;
   opacity: 0;
   transition: 1s all ease-in-out;
